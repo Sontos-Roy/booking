@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.mobiletablate-menu-nav {
+  background: #fff;
+  width: 100%;
+  transition: all 0.5s ease;
+  height: 85px;
+  overflow: hidden;
+}
+.mobiletablate-menu-nav {
+  display: none;
+  transition: all 0.5s ease;
+}
+.mobiletablate-menu-nav.active-navbar {
+  height: 100vh;
+  overflow: visible;
+  transition: all 0.5s ease;
+}
+
+.responsive-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 10px;
+}
+.responsive-menu-container.active-navbar {
+  height: 100vh;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 26px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.logo a {
+  padding: 25px 0px;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo img {
+  width: 125px;
+  height: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+  .responsive-nav-items ul {
+    gap: 18px;
+  }
+}
+
+.responsive-nav-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+}
+.responsive-nav-items ul li {
+  list-style: none;
+}
+.responsive-nav-items ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+}
+
+.responsive-nav-items ul .sign-in {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.responsive-nav-items ul li .responsive-ragisterbtn {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+  font-family: "Raleway", sans-serif;
+}
+
+.UserNotLogin {
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+  .mobiletablate-menu-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+  .logo img {
+    width: 100px;
+  }
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 3px);
+  transform: rotate(-45deg) translate(-9px, 3px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-9px, -4px);
+}

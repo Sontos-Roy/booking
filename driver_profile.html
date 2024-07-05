@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight</title>
+
+    <script src="./JS/Jquery.js"></script>
+    <script src="./JS/slick.min.js"></script>
+    <!-- ------------------------ SCSS FILES START --------------------------- -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsiveNavbar.css" />
+    <!-- ------------------------ SCSS FILES END --------------------------------->
+    <!-- ------------------------ FONT AWESOME FILES START --------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ------------------------ FONT AWESOME FILES START --------------------------------->
+    <!-- ------------------------ SLICK SLIDER FILES START --------------------------------->
+    <link rel="stylesheet" href="./SCSS/slick-theme.css" />
+    <link rel="stylesheet" href="./SCSS/slick.css" />
+    <link rel="stylesheet" href="css/page.css">
+
+    <!-- ------------------------ SLICK SLIDER FILES END --------------------------------->
+  </head>
+  <body>
+    <section class="banner-section-parent-container-wrapper">
+      <header>
+        <nav>
+          <div class="navbar-main-parent-container-wrapper">
+            <div class="desktop-view-navbar">
+              <div class="nav-left-logo">
+                <img src="./ASSETS/images/logo.png" alt="" />
+              </div>
+              <div class="nav-middle-links">
+                <a href="">Home</a>
+                <div class="dropdown-wrapper">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown__button">
+                      Services<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menus">
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Car</a>
+                        <ul class="submeunus">
+                          <li>
+                            <a href="">BMW</a>
+                          </li>
+                          <li>
+                            <a href="">Rolse Royles</a>
+                          </li>
+                          <li>
+                            <a href="">Audi</a>
+                          </li>
+                          <li>
+                            <a href="">Tesla</a>
+                          </li>
+                          <li>
+                            <a href="">Tata</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Flight</a>
+                      </li>
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Boat</a>
+                      </li>
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Hotel</a>
+                        <ul class="submeunus">
+                          <li>
+                            <a href="">Hotel 1</a>
+                          </li>
+                          <li>
+                            <a href="">Hotel 2</a>
+                          </li>
+                          <li>
+                            <a href="">Hotel 3</a>
+                          </li>
+                          <li>
+                            <a href="">Hotel 4</a>
+                          </li>
+                          <li>
+                            <a href="">Hotel 5</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dropdown-wrapper">
+                  <div class="dropdown">
+                    <a href="" class="dropdown__button">
+                      My Booking<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menus">
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Book 1</a>
+                      </li>
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Book 2</a>
+                      </li>
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href=""> Book 3</a>
+                      </li>
+                      <li class="subdropdown-menus">
+                        <a class="dropdown-item" href="">Book 4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="">My Booking</a>
+                <a href="">Package & Offers</a>
+                <a href="">Blog</a><a href="">About Us</a>
+                <a href="">More</a>
+              </div>
+              <div class="nav-right-side">
+                <div class="search-bar">
+                  <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                  <div class="search-bar-container active">
+                    <a href="#">
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+                        alt="magnifier"
+                        class="magnifier"
+                      />
+                    </a>
+                    <div class="input-here">
+                      <input type="text" placeholder="Search Here..." />
+                    </div>
+                  </div>
+                </div>
+                <div class="language-select">
+                  <i class="fa-solid fa-globe"></i>
+                  <select name="" id="">
+                    <option value="">Eng</option>
+                    <option value="">Bang</option>
+                  </select>
+                </div>
+                <div class="auth-buttons">
+                  <button class="btn1">Login</button>
+                  <button class="btn2">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page_header">
+        <div class="image">
+            <img src="ASSETS/images/bread/Rectangle418.png" alt="">
+        </div>
+      </div>
+      <div class="banner-text-and-form-container-wrapper">
+        <div class="banner-text-content-wrapper">
+        <div class="landing-page-bannerform-main-parent-container-wrapper">
+          <div class="inner">
+            <div class="top">
+              <div class="left"><p>CHOOSE CATEGORY</p></div>
+              <div class="middle">
+                <div class="link">
+                  <a href="#" class="tab-btn active-tab-btn" data-filter="Car"
+                    >Car</a
+                  >
+                </div>
+                <div class="link">
+                  <a href="#" class="tab-btn" data-filter="flight">Flight</a>
+                </div>
+                <div class="link">
+                  <a href="#" class="tab-btn" data-filter="hotel">Hotel</a>
+                </div>
+                <div class="link">
+                  <a href="#" class="tab-btn" data-filter="boat">Boat</a>
+                </div>
+              </div>
+              <div class="right">
+                <div class="radio">
+                  <input type="radio" name="" id="" />
+                  <label for="">One Way</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="" id="" />
+                  <label for="">Round Trip</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-section-wrapper">
+              <form
+                action=""
+                class="car-landing-form active-tabs row from-tab"
+                data-item="Car"
+              >
+                <div class="top-inputs col-12 row">
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">From</label>
+                    <input type="text" />
+                  </div>
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">TO</label>
+                    <input type="text" />
+                  </div>
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">CHOOSE YOUR CAR</label>
+                    <select name="" id="">
+                      <option value="">Chrysler 300 Limo</option>
+                      <option value="">Chrysler 300 Limo</option>
+                      <option value="">Chrysler 300 Limo</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="bottom-inputs col-12">
+                  <div class="row w-100">
+                    <div class="col-lg-9">
+                      <div class="row left-bottom">
+                        <div class="col-lg-2">
+                          <div class="noof-Luggage">
+                            <label for="">No of Luggage</label>
+                            <div class="inner">
+                              <a class="count-btn1">-</a>
+                              <p class="value">1</p>
+                              <a class="count-btn2">+</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="date-and-time">
+                            <label for="">Pick-up Date and Time</label>
+                            <div class="time-inputs">
+                              <input type="date" name="" id="" />
+                              <input type="time" name="" id="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="date-and-time">
+                            <label for="">Drop-off Date and Time</label>
+                            <div class="time-inputs">
+                              <input type="date" name="" id="" />
+                              <input type="time" name="" id="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="date-and-time">
+                            <label for="">Passengers</label>
+                            <div class="time-inputs">
+                              <select name="" id="">
+                                <option value="">1 adult</option>
+                                <option value="">2 adult</option>
+
+                                <option value="">3 adult</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="left-bottom">
+                      
+                        
+                        <div class="date-and-time">
+                          <label for="">Drop-off Date and Time</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <input type="time" name="" id="" />
+                          </div>
+                        </div>
+                       
+                      </div> -->
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="buttons">
+                        <button>Details</button>
+                        <button>SEARCH NOW</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox col-12">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Return car to different location</label>
+                </div>
+              </form>
+              <form
+                action=""
+                class="flight-landing-form from-tab"
+                data-item="flight"
+              >
+                <div class="top-inputs row">
+                  <div class="col-lg-4">
+                    <div class="top-singleinput">
+                      <label for="">From</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="top-singleinput">
+                      <label for="">TO</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="top-singleinput">
+                      <label for="">CHOOSE YOUR CAR</label>
+                      <select name="" id="">
+                        <option value="">Chrysler 300 Limo</option>
+                        <option value="">Chrysler 300 Limo</option>
+                        <option value="">Chrysler 300 Limo</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-inputs">
+                  <div class="row left-bottom">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="date-and-time">
+                        <label for="">Pick-up Date and Time</label>
+                        <div class="time-inputs">
+                          <input type="date" name="" id="" />
+                          <input type="time" name="" id="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="date-and-time">
+                        <label for="">Passengers</label>
+                        <div class="time-inputs">
+                          <select name="" id="">
+                            <option value="">1 adult</option>
+                            <option value="">2 adult</option>
+
+                            <option value="">3 adult</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="buttons">
+                        <button>Details</button>
+                        <button>SEARCH NOW</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="bottom-inputs">
+                  <div class="left-bottom">
+                    
+                  
+                    <div class="date-and-time">
+                      <label for="">Drop-off Date and Time</label>
+                      <div class="time-inputs">
+                        <input type="date" name="" id="" />
+                        <input type="time" name="" id="" />
+                      </div>
+                    </div>
+                 
+                  </div>
+                  <div class="buttons">
+                    <button>Details</button>
+                    <button>SEARCH NOW</button>
+                  </div>
+                </div> -->
+                <div class="checkbox">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Return car to different location</label>
+                </div>
+              </form>
+              <form
+                action=""
+                class="hotel-landing-form from-tab"
+                data-item="hotel"
+              >
+                <div class="top-inputs col-12 row">
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">Location</label>
+                    <input type="text" />
+                  </div>
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">Price Range</label>
+                    <div class="d-flex gap-2 price-range">
+                      <p class="mb-0">$ Price Ranges</p>
+                      <div class="range">
+                        <input name="range" type="range" min="0" max="100000" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top-singleinput col-lg-2">
+                    <label for="">Check In</label>
+                    <input type="date" />
+                  </div>
+                  <div class="top-singleinput col-lg-2">
+                    <label for="">Check Out</label>
+                    <input type="date" />
+                  </div>
+                </div>
+
+                <div class="bottom-inputs col-12">
+                  <div class="row w-100 pb-2">
+                    <div class="col-lg-7">
+                      <div class="row left-bottom">
+                        <div class="col-lg-4">
+                          <div class="noof-Luggage">
+                            <label for="">No of Luggage</label>
+                            <div class="inner">
+                              <a class="count-btn1">-</a>
+                              <p class="value">1</p>
+                              <a class="count-btn2">+</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="date-and-time">
+                            <label for="">Passengers</label>
+                            <div class="time-inputs">
+                              <select name="" id="">
+                                <option value="">1 adult</option>
+                                <option value="">2 adult</option>
+
+                                <option value="">3 adult</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="buttons">
+                            <button>SEARCH NOW</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox col-12">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Return car to different location</label>
+                </div>
+              </form>
+              <form
+                action=""
+                class="boat-landing-form from-tab"
+                data-item="boat"
+              >
+                <div class="top-inputs col-12 row">
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">Place Of Departure</label>
+                    <select name="" id="">
+                      <option value="" selected>Place Of Departure</option>
+                      <option value="">Marina Artigo</option>
+                      <option value="">Marina Artigo</option>
+                    </select>
+                  </div>
+                  <div class="top-singleinput col-lg-4">
+                    <label for="">Time</label>
+                    <select name="" id="">
+                      <option value="" selected>Select Time</option>
+                      <option value="">10PM To 12AM</option>
+                      <option value="">08PM To 10AM</option>
+                      <option value="">06PM To 08AM</option>
+                    </select>
+                  </div>
+                  <div class="top-singleinput col-lg-2">
+                    <label for="">Arrival</label>
+                    <input type="date" />
+                  </div>
+                  <div class="top-singleinput col-lg-2">
+                    <label for=""> Departure </label>
+                    <input type="date" />
+                  </div>
+                </div>
+                <div class="bottom-inputs col-12">
+                  <div class="row w-100">
+                    <div class="col-lg-9">
+                      <div class="row left-bottom top-inputs">
+                        <div class="col-lg-4">
+                          <div class="top-singleinput">
+                            <label for="">Boat Type</label>
+                            <select name="" id="">
+                              <oPption value="" selected>SallBoat</oPption>
+                              <option value="">SallBoat 1</option>
+                              <option value="">SallBoat 2</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="top-singleinput">
+                            <label for="">Sali</label>
+                            <select name="" id="">
+                              <option value="" selected>
+                                With or without Captain
+                              </option>
+                              <option value="">SallBoat 1</option>
+                              <option value="">SallBoat 2</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="buttons">
+                            <button>SEARCH NOW</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                  </div>
+                </div>
+                <div class="checkbox col-12">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Return car to different location</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Responsive Naver  ======== -->
+    <header>
+      <nav class="mobiletablate-menu-nav">
+        <div class="container">
+          <div class="responsive-menu-container">
+            <div class="brand-logo">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="ASSETS/images/logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="responsive-nav-items">
+              <ul>
+                <li>
+                  <a href="#" class="Search-bar-show">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+                <li>
+                  <div class="navbar-toggler icon_bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  <!-- ======================== -->
+                </li>
+                <!-- ========= User Not Login Show Sign or Signup========== -->
+                <div class="UserNotLogin d-flex align-items-center">
+                  <li>
+                    <a href="Register.html" class="responsive-ragisterbtn"
+                      >Register</a
+                    >
+                  </li>
+                </div>
+                <!-- ========== User login Show user profile or Notifications  ======== -->
+              </ul>
+            </div>
+          </div>
+          <!-- ======== Responsive NavItem ======== -->
+
+          <div class="responsive_menu_item">
+            <div class="nav-middle-links">
+              <div class="nav-item">
+                <ul class="nav-item-style">
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">Home</a>
+                  </li>
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">Services</a>
+                    <ul class="dopdown-down-nav-item">
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Car</a>
+                      </li>
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Boat</a>
+                      </li>
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Flight</a>
+                      </li>
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Holtel</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">My Booking</a>
+                    <ul class="dopdown-down-nav-item">
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Book 1</a>
+                      </li>
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Book 2</a>
+                      </li>
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Book 3</a>
+                      </li>
+                      <li class="drop-down-list">
+                        <a href="#" class="catagories-link">Book 3</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">Package & Offers</a>
+                  </li>
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">About Us</a>
+                  </li>
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">Blog</a>
+                  </li>
+                  <li class="nav-item-list">
+                    <a href="#" class="sub-nav">More</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="input-here">
+                <input type="text" placeholder="Search Here..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ========== Responsive Naver End   ======== -->
+    <main class="main-pages">
+      <section class="responsive-booking-form">
+        <div class="banner-text-and-form-container-wrapper">
+          <div class="landing-page-bannerform-main-parent-container-wrapper">
+            <div class="inner">
+              <div class="top">
+                <div class="left"><p>CHOOSE CATEGORY</p></div>
+                <div class="middle">
+                  <div class="link">
+                    <a href="#" class="tab-btn active-tab-btn" data-filter="Car"
+                      >Car</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a href="#" class="tab-btn" data-filter="flight">Flight</a>
+                  </div>
+                  <div class="link">
+                    <a href="#" class="tab-btn" data-filter="hotel">Hotel</a>
+                  </div>
+                  <div class="link">
+                    <a href="#" class="tab-btn" data-filter="boat">Boat</a>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="radio">
+                    <input type="radio" name="" id="" />
+                    <label for="">One Way</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="" id="" />
+                    <label for="">Round Trip</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-section-wrapper">
+                <form
+                  action=""
+                  class="car-landing-form active-tabs row from-tab"
+                  data-item="Car"
+                >
+                  <div class="top-inputs col-12 row">
+                    <div class="top-singleinput col-lg-4 col-md-6 col-6">
+                      <label for="">From</label>
+                      <input type="text" />
+                    </div>
+                    <div class="top-singleinput col-lg-4 col-md-6 col-6">
+                      <label for="">TO</label>
+                      <input type="text" />
+                    </div>
+                    <div class="top-singleinput col-lg-4 col-12 mt-2 col-md-6">
+                      <label for="">CHOOSE YOUR CAR</label>
+                      <select name="" id="">
+                        <option value="">Chrysler 300 Limo</option>
+                        <option value="">Chrysler 300 Limo</option>
+                        <option value="">Chrysler 300 Limo</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bottom-inputs col-12">
+                    <div class="row w-100">
+                      <div class="col-lg-9">
+                        <div class="row left-bottom">
+                          <div class="col-lg-2 col-6 col-md-6">
+                            <div class="noof-Luggage">
+                              <label for="">No of Luggage</label>
+                              <div class="inner">
+                                <a class="count-btn1">-</a>
+                                <p class="value">1</p>
+                                <a class="count-btn2">+</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 col-md-6">
+                            <div class="date-and-time">
+                              <label for="">Pick-up Date and Time</label>
+                              <div class="time-inputs">
+                                <input type="date" name="" id="" />
+                                <input type="time" name="" id="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 col-md-6">
+                            <div class="date-and-time">
+                              <label for="">Drop-off Date and Time</label>
+                              <div class="time-inputs">
+                                <input type="date" name="" id="" />
+                                <input type="time" name="" id="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-6 col-md-6">
+                            <div class="date-and-time">
+                              <label for="">Passengers</label>
+                              <div class="time-inputs">
+                                <select name="" id="">
+                                  <option value="">1 adult</option>
+                                  <option value="">2 adult</option>
+
+                                  <option value="">3 adult</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="left-bottom">
+                        
+                          
+                          <div class="date-and-time">
+                            <label for="">Drop-off Date and Time</label>
+                            <div class="time-inputs">
+                              <input type="date" name="" id="" />
+                              <input type="time" name="" id="" />
+                            </div>
+                          </div>
+                         
+                        </div> -->
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="buttons">
+                          <button>Details</button>
+                          <button>SEARCH NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkbox col-12">
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Return car to different location</label>
+                  </div>
+                </form>
+                <form
+                  action=""
+                  class="flight-landing-form from-tab"
+                  data-item="flight"
+                >
+                  <div class="top-inputs row">
+                    <div class="col-lg-4">
+                      <div class="top-singleinput">
+                        <label for="">From</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="top-singleinput">
+                        <label for="">TO</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="top-singleinput">
+                        <label for="">CHOOSE YOUR CAR</label>
+                        <select name="" id="">
+                          <option value="">Chrysler 300 Limo</option>
+                          <option value="">Chrysler 300 Limo</option>
+                          <option value="">Chrysler 300 Limo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-inputs">
+                    <div class="row left-bottom">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="date-and-time">
+                          <label for="">Pick-up Date and Time</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <input type="time" name="" id="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="date-and-time">
+                          <label for="">Passengers</label>
+                          <div class="time-inputs">
+                            <select name="" id="">
+                              <option value="">1 adult</option>
+                              <option value="">2 adult</option>
+
+                              <option value="">3 adult</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="buttons">
+                          <button>Details</button>
+                          <button>SEARCH NOW</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="bottom-inputs">
+                    <div class="left-bottom">
+                      
+                    
+                      <div class="date-and-time">
+                        <label for="">Drop-off Date and Time</label>
+                        <div class="time-inputs">
+                          <input type="date" name="" id="" />
+                          <input type="time" name="" id="" />
+                        </div>
+                      </div>
+                   
+                    </div>
+                    <div class="buttons">
+                      <button>Details</button>
+                      <button>SEARCH NOW</button>
+                    </div>
+                  </div> -->
+                  <div class="checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Return car to different location</label>
+                  </div>
+                </form>
+                <form
+                  action=""
+                  class="hotel-landing-form from-tab"
+                  data-item="hotel"
+                >
+                  <div class="top-inputs col-12 row">
+                    <div class="top-singleinput col-lg-4">
+                      <label for="">Location</label>
+                      <input type="text" />
+                    </div>
+
+                    <div class="top-singleinput col-lg-4">
+                      <label for="">Price Range</label>
+                      <div class="d-flex gap-2 price-range">
+                        <p class="mb-0">$ Price Ranges</p>
+                        <div class="range">
+                          <input
+                            name="range"
+                            type="range"
+                            min="0"
+                            max="100000"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="top-singleinput col-lg-2">
+                      <label for="">Check In</label>
+                      <input type="date" />
+                    </div>
+                    <div class="top-singleinput col-lg-2">
+                      <label for="">Check Out</label>
+                      <input type="date" />
+                    </div>
+                  </div>
+
+                  <div class="bottom-inputs col-12">
+                    <div class="row w-100 pb-2">
+                      <div class="col-lg-7">
+                        <div class="row left-bottom">
+                          <div class="col-lg-4">
+                            <div class="noof-Luggage">
+                              <label for="">No of Luggage</label>
+                              <div class="inner">
+                                <a class="count-btn1">-</a>
+                                <p class="value">1</p>
+                                <a class="count-btn2">+</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="date-and-time">
+                              <label for="">Passengers</label>
+                              <div class="time-inputs">
+                                <select name="" id="">
+                                  <option value="">1 adult</option>
+                                  <option value="">2 adult</option>
+
+                                  <option value="">3 adult</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="buttons">
+                              <button>SEARCH NOW</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkbox col-12">
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Return car to different location</label>
+                  </div>
+                </form>
+                <form
+                  action=""
+                  class="boat-landing-form from-tab"
+                  data-item="boat"
+                >
+                  <div class="top-inputs col-12 row">
+                    <div class="top-singleinput col-lg-4">
+                      <label for="">Place Of Departure</label>
+                      <select name="" id="">
+                        <option value="" selected>Place Of Departure</option>
+                        <option value="">Marina Artigo</option>
+                        <option value="">Marina Artigo</option>
+                      </select>
+                    </div>
+                    <div class="top-singleinput col-lg-4">
+                      <label for="">Time</label>
+                      <select name="" id="">
+                        <oPption value="" selected>Select Time</oPption>
+                        <option value="">10PM To 12AM</option>
+                        <option value="">08PM To 10AM</option>
+                        <option value="">06PM To 08AM</option>
+                      </select>
+                    </div>
+                    <div class="top-singleinput col-lg-2">
+                      <label for="">Arrival</label>
+                      <input type="date" />
+                    </div>
+                    <div class="top-singleinput col-lg-2">
+                      <label for=""> Departure </label>
+                      <input type="date" />
+                    </div>
+                  </div>
+                  <div class="bottom-inputs col-12">
+                    <div class="row w-100">
+                      <div class="col-lg-9">
+                        <div class="row left-bottom top-inputs">
+                          <div class="col-lg-4">
+                            <div class="top-singleinput">
+                              <label for="">Boat Type</label>
+                              <select name="" id="">
+                                <oPption value="" selected>SallBoat</oPption>
+                                <option value="">SallBoat 1</option>
+                                <option value="">SallBoat 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="top-singleinput">
+                              <label for="">Sali</label>
+                              <select name="" id="">
+                                <option value="" selected>
+                                  With or without Captain
+                                </option>
+                                <option value="">SallBoat 1</option>
+                                <option value="">SallBoat 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="buttons">
+                              <button>SEARCH NOW</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3"></div>
+                    </div>
+                  </div>
+                  <div class="checkbox col-12">
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Return car to different location</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------ brand section end ------------------------- -->
+
+      <!-- ------------------------ BEST TRIP DEALS start------------------ -->
+      <div class="best-trip-deals-main-parent-container-wrapper driver_section">
+        <div class="head text-start">
+          <h1>DRIVER <span>DETAILS</span></h1>
+          <div class="row">
+            <div class="col-lg-7 col-md-6 col-12">
+                <div class="driver-details">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5">
+                            <img src="ASSETS/images/driver-details-img/Rectangle 935.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h3 class="text-light">Ms XXX</h3>
+                            <h5 class="text-ion">LINCOLN BEG STRECTH SEDAN</h5>
+                            <div class="starts d-flex">
+                                <div class="star text-light">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="star text-light">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="star text-light">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-ion mt-388888">BOOK NOW</button>
+                        </div>
+                    </div>
+                    <h5 class="text-light text-uppercase mt-4">
+                        Driver Details
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="container">
+                    <img src="ASSETS/images/driver/Rectangle 785.png" alt="" class="img-fluid">
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="all-card-wrapper">
+          <div class="container">
+            <div class="driver_info_box pb-4">
+                <div class="col-lg-11 col-md-11 col-12 m-auto">
+                    <div class="driver_info_inner pt-2 pb-1">
+                        <div class="row justify-content-end pb-2">
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <select name="" id="" class="form-control p-3 bg-transparent text-light">
+                                    <option value="" class="text-dark">Outside City</option>
+                                    <option value="" class="text-dark">Inside City</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-12">
+                                <select name="" id="" class="form-control p-3 bg-transparent text-light">
+                                    <option value="" class="text-dark">Select Another Driver</option>
+                                    <option value="" class="text-dark">Driver 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="info bg-ion-tr-100 p-1 ps-lg-4 ps-2 mb-1">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 p-3 text-light">
+                                            Driver Phone Number
+                                        </div>
+                                        <div class="col-lg-7 bg-ion-tr-50 p-3 text-light opacity-75 px-lg-4 px-2">
+                                            +880 17XX XXXXXX
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info bg-ion-tr-100 p-1 ps-lg-4 ps-2 mb-1">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 p-3 text-light">
+                                            Driver License
+                                        </div>
+                                        <div class="col-lg-7 bg-ion-tr-50 p-3 text-light opacity-75 px-lg-4 px-2">
+                                            License
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info bg-ion-tr-100 p-1 ps-lg-4 ps-2 mb-1">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 p-3 text-light">
+                                            Professionalism
+                                        </div>
+                                        <div class="col-lg-7 bg-ion-tr-50 p-3 text-light opacity-75 px-lg-4 px-2">
+                                            Drivers are expected to be courteous, punctual, and well-dressed in a professional attire, often a suit or uniform.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info bg-ion-tr-100 p-1 ps-lg-4 ps-2 mb-1">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 p-3 text-light">
+                                            Driving Experience
+                                        </div>
+                                        <div class="col-lg-7 p-0">
+                                            <div class="bg-ion-tr-50 p-3 text-light opacity-75 px-lg-4 px-2">
+                                                5+ Years
+                                            </div>
+                                            <small class="text-light opacity-75">
+                                                Note :Limousine drivers typically have extensive experience in providing chauffeur services, ensuring a smooth and safe ride.
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info bg-ion-tr-100 p-1 ps-lg-4 ps-2 mb-1">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 p-3 text-light">
+                                            Safety
+                                        </div>
+                                        <div class="col-lg-7 bg-ion-tr-50 p-3 text-light opacity-75 px-lg-4 px-2">
+                                            Limousine companies prioritize passenger safety, and drivers should adhere to all traffic laws and safety protocols.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info bg-ion-tr-100 p-1 ps-lg-4 ps-2 mb-1">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 p-3 text-light">
+                                            Background Checks
+                                        </div>
+                                        <div class="col-lg-7 bg-ion-tr-50 p-3 text-light opacity-75 px-lg-4 px-2">
+                                            Limousine companies often conduct background checks on their drivers to ensure they have a clean criminal record.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between my-4">
+              <button class="btn btn-ion">Previous</button>
+              <button class="btn btn-ion">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------- FOOTER SECTION end -------------------- -->
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer_container">
+          <div class="container">
+            <div class="">
+              <div class="footer_title">
+                <div class="brand-logos">
+                  <img src="ASSETS/images/logo.png" alt="" />
+                </div>
+              </div>
+              <div class="text-white">
+                <p class="fs-5 mt-2 mb-2">
+                  We ara a lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore exercitation
+                  ullamco labor
+                </p>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col-lg-3">
+                  <div class="mt-1">
+                    <div class="d-flex gap-3 text-white">
+                      <span class="fs-3">
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                      <div class="mt-1">
+                        <h6 class="mb-1">Teliphone</h6>
+                        <p class="mb-0 fs-5" style="color: #008080">
+                          6564961645
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="">
+                    <div class="d-flex gap-3 text-white">
+                      <span class="fs-3">
+                        <i class="fa-regular fa-envelope"></i>
+                      </span>
+                      <div class="mt-1">
+                        <h6 class="mb-1">Email</h6>
+                        <p class="mb-0 fs-5" style="color: #008080">
+                          NSL@gmail.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="">
+                    <div class="d-flex gap-3 text-white">
+                      <span class="fs-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </span>
+                      <div class="mt-1">
+                        <h6 class="mb- 1">Address</h6>
+                        <p class="mb-0 fs-5" style="color: #008080">
+                          708 Campfire Ave
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="">
+                    <div class="d-flex gap-3 text-white">
+                      <span class="fs-3">
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                      <div class="mt-1">
+                        <h6 class="mb-1">Fax</h6>
+                        <p class="mb-0 fs-5" style="color: #008080">
+                          6564961645
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="footer_title">
+                  <h4>Expertises</h4>
+
+                  <ul>
+                    <li>
+                      <a href=""> Canva</a>
+                    </li>
+                    <li>
+                      <a href=""> Video Editing</a>
+                    </li>
+                    <li>
+                      <a href=""> Sketen</a>
+                    </li>
+                    <li>
+                      <a href=""> Adove-xd</a>
+                    </li>
+                    <li>
+                      <a href=""> Figma</a>
+                    </li>
+                    <li>
+                      <a href=""> HTML CSS</a>
+                    </li>
+                    <li>
+                      <a href=""> React Js</a>
+                    </li>
+                    <li>
+                      <a href=""> Vue Js</a>
+                    </li>
+                    <li>
+                      <a href=""> Next Js</a>
+                    </li>
+                    <li>
+                      <a href=""> Js</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2">
+                <div class="footer_title">
+                  <h4>Services</h4>
+
+                  <ul>
+                    <li>
+                      <a href=""> Canva</a>
+                    </li>
+                    <li>
+                      <a href=""> Video Editing</a>
+                    </li>
+                    <li>
+                      <a href=""> Sketen</a>
+                    </li>
+                    <li>
+                      <a href=""> Adove-xd</a>
+                    </li>
+                    <li>
+                      <a href=""> Figma</a>
+                    </li>
+                    <li>
+                      <a href=""> HTML CSS</a>
+                    </li>
+                    <li>
+                      <a href=""> React Js</a>
+                    </li>
+                    <li>
+                      <a href=""> Vue Js</a>
+                    </li>
+                    <li>
+                      <a href=""> Next Js</a>
+                    </li>
+                    <li>
+                      <a href=""> Js</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer_title">
+                  <h4>FAQ</h4>
+
+                  <ul>
+                    <li>
+                      <a href="">UI/UX Design </a>
+                    </li>
+                    <li>
+                      <a href="">Video Editing </a>
+                    </li>
+                    <li>
+                      <a href="">Web Design </a>
+                    </li>
+                    <li>
+                      <a href="">Web Developments </a>
+                    </li>
+                    <li>
+                      <a href="">Software Developments </a>
+                    </li>
+                    <li>
+                      <a href="">Apps Developments </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer_title">
+                  <h4>Support</h4>
+                  <ul>
+                    <li>
+                      <a href=""> why need Figma</a>
+                    </li>
+                    <li>
+                      <a href=""> why need Laravel</a>
+                    </li>
+                    <li>
+                      <a href=""> why needs Advance Frontend Technology</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer_title">
+                  <h4>About</h4>
+                  <ul>
+                    <li>
+                      <a href=""> About us </a>
+                    </li>
+                    <li>
+                      <a href=""> Contact 🚀 </a>
+                    </li>
+                    <li>
+                      <a href="">Services </a>
+                      <a href="">Technology</a>
+                      <a href="">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer_title">
+                  <h4>Plans and Pricing</h4>
+                  <ul>
+                    <li>
+                      <a href="">Pricing </a>
+                    </li>
+                    <li>
+                      <a href="">Enterprise </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="app_auth">
+              <div class="mb-3">
+                <a href="">
+                  <img
+                    src="https://seba247.com/public/frontend/assets/images/Frame.png"
+                    alt=""
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="https://seba247.com/public/frontend/assets/images/Frame (1).png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footerBttom">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="footer_title">
+                    <ul class="d-flex gap-3 align-items-center">
+                      <li>
+                        <a href=""> Home </a>
+                      </li>
+                      <li>
+                        <a href=""> About US </a>
+                      </li>
+                      <li>
+                        <a href="">Privacy Policy </a>
+                      </li>
+                      <li>
+                        <a href=""> Sitemap </a>
+                      </li>
+                      <li>
+                        <a href="#"> Terms of Use </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <ul class="socila_media">
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-9">
+                  <div class="right_contents">
+                    <div class="copyRight">
+                      <p>© 2023 NavieaSoft Limited, Inc.</p>
+                    </div>
+                    <ul class="trams">
+                      <li>
+                        <a href=""> Terms and Condition </a>
+                      </li>
+                      <li>
+                        <a href=""> Privacy Policy </a>
+                      </li>
+                      <li>
+                        <a href=""> Manage Cookie </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------------- ALL SCRIPT FILE START ---------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="JS/main.js"></script>
+    <script src="./JS/dropdown.js"></script>
+    <script src="./JS/searchbar.js"></script>
+    <script src="./JS/landingTab.js"></script>
+
+    <!-- ----------------------------------------- ALL SCRIPT FILE END ---------------------------- -->
+
+    <!-- ----------------------------------------- SLIDER START ---------------------------- -->
+    <script>
+      function slider(className, slideshow) {
+        $(document).ready(function () {
+          $(`.${className}`).slick({
+            slidesToShow: slideshow,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: true,
+            autoplay: true,
+            loop: true,
+            autoplaySpeed: 3000,
+            fade: true,
+            dots: true,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                  infinite: true,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+
+            nextArrow:
+              '<a class="prev_arrow"> <i class="fa-solid fa-angle-down"></i></a>',
+            prevArrow:
+              '<a class="next_arrow"> <i class="fa-solid fa-angle-up"></i></a>',
+          });
+        });
+      }
+
+      slider("landing-page-banner-slider", 1);
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".tab-mnu").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          centerPadding: "20",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: false,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".ourservice-all-card-slider-wrapper").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".alluser-card-review-card").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+                centerMode: false,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".ourclient-slider-wrapper").slick({
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".best-trip-deals-all-card-wrapper").slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".tab-mobile-view-all-card-container-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <!-- -----------------------------------------SLIDER END ---------------------------- -->
+  </body>
+</html>

@@ -1,0 +1,213 @@
+@media screen and (min-width: 1180px) {
+  .responsive-booking-form {
+    display: none;
+  }
+  .respons-Services-Slider {
+    display: none;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 650px) {
+  .responsive-booking-form {
+    display: block;
+    .landing-page-bannerform-main-parent-container-wrapper {
+      width: 100% !important;
+      margin-top: 1rem !important;
+      padding: 10px 10px !important;
+      border: none !important;
+
+      .bottom-inputs {
+        margin-left: 10px;
+        padding: 0 !important;
+      }
+
+      .top {
+        .middle {
+          width: 100%;
+        }
+      }
+
+      .left-bottom {
+        .noof-Luggage {
+          .inner {
+            background: #fff !important;
+          }
+        }
+        .date-and-time .time-inputs {
+          background: #fff !important;
+        }
+      }
+    }
+    .top {
+      flex-direction: column !important;
+      justify-content: start !important;
+      align-items: start !important;
+      gap: 10px !important;
+      .left {
+        p {
+          text-align: start;
+          margin: 10px 0;
+        }
+      }
+
+      .right {
+        margin-top: 10px !important;
+      }
+    }
+  }
+
+  .car-landing-our-client-section-parent-container {
+    height: 250px;
+    .head {
+      padding: 10px !important;
+    }
+
+    .ourclient-slider-wrapper {
+      margin: 1rem 0;
+    }
+  }
+
+  .allcard-section-wrapper-desktop {
+    display: none;
+  }
+
+  .respons-Services-Slider {
+    display: block;
+
+    .allcard-section-wrapper-desktop {
+      display: block;
+
+      .next_arrow {
+        top: 50%;
+        transform: translate(-50%, -50%) !important;
+        right: -25px !important;
+        width: 30px !important;
+        height: 30px !important;
+        cursor: pointer;
+      }
+
+      .prev_arrow {
+        top: 50%;
+        transform: translate(-50%, -50%) !important;
+        left: -5px !important;
+        width: 30px !important;
+        height: 30px !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1080px) {
+  .landing-page-bannerform-main-parent-container-wrapper {
+    width: 100% !important;
+  }
+
+  .banner-section-parent-container-wrapper {
+    display: none !important;
+  }
+  .mobiletablate-menu-nav {
+    display: block !important;
+  }
+
+  .brand-section-container-wrapper .inner img {
+    width: 75% !important;
+  }
+
+  .best-trip-deals-main-parent-container-wrapper {
+    .single-card {
+      height: 200px !important;
+
+      img {
+        height: 180px !important;
+      }
+      .card-details {
+        position: absolute;
+        bottom: 30px;
+        left: 10px !important;
+      }
+    }
+  }
+
+  .landing-page-bannerform-main-parent-container-wrapper .inner .top {
+    flex-direction: column;
+
+    align-items: start;
+
+    gap: 20px !important;
+  }
+
+  .landingpage-allcategory-parent-container-wrapper {
+    .single-card {
+      .title {
+        h1 {
+          font-weight: 700 !important;
+
+          font-size: 20px !important;
+        }
+      }
+      .details {
+        height: 60px !important;
+
+        p {
+          font-size: 16px !important;
+        }
+      }
+      .passengers {
+        button {
+          p {
+            font-size: 11px !important;
+          }
+        }
+      }
+
+      .booknowbutton {
+        button {
+          padding: 10px 10px !important;
+
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+
+  .car-landing-our-client-section-parent-container {
+    height: 300px !important;
+  }
+
+  .ourservice-all-card-slider-wrapper {
+    .bottom button {
+      padding: 10px 10px !important;
+    }
+  }
+  .mobiletablate-menu-nav {
+    .input-here {
+      right: 0 !important;
+      margin: auto !important;
+    }
+  }
+
+  .never-miss-an-offer-main-parent-container-wrapper {
+    height: 280px !important;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1080px) {
+  .landingpage-oublog-parent-container-wrapper {
+    .right {
+      .right-inner {
+        .img {
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .mobiletablate-menu-nav {
+    .input-here {
+      right: 0 !important;
+      margin: auto !important;
+    }
+  }
+}

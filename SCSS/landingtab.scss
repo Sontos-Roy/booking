@@ -1,0 +1,384 @@
+.all-category-tabsection-parent-wrapper {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+  // border: solid white;
+
+  .next_arrow {
+    color: white;
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: -10px;
+    @media only screen and (max-width: 644px) {
+      width: 20px;
+      height: 20px;
+      top: 18%;
+    }
+  }
+  .prev_arrow {
+    @media only screen and (max-width: 644px) {
+      width: 20px;
+      height: 20px;
+      top: 18%;
+    }
+    color: white;
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: -10px;
+    z-index: 100;
+    box-shadow: 0px 0px 20px #000;
+  }
+  .tab-block {
+    width: 90%;
+    // height: 290px;
+    margin: 50px auto;
+    @media only screen and (max-width: 644px) {
+      width: 100% !important;
+    }
+    .tab-mnu {
+      // border: solid white;
+      display: block;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0px 0px !important;
+      gap: 10px;
+
+      @media only screen and (max-width: 644px) {
+        padding: 0px 0px !important;
+      }
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      li {
+        // width: 177px;
+        @media only screen and (max-width: 644px) {
+          font-size: 10px;
+          padding: 0px 2px;
+          margin-left: 5px !important;
+        }
+
+        button {
+          height: 40px;
+          border-radius: 50px;
+          padding: 10px 30px;
+          width: max-content;
+          border: 1px solid #fff;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          color: white;
+          text-align: center;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-left: 10px;
+          transition: all 0.4s ease;
+          border-color: #008080;
+          cursor: pointer;
+          &:hover {
+            background: #008080;
+            color: #fff;
+            border-color: #008080;
+          }
+          &.active {
+            background: #008080;
+            color: #fff;
+            border-color: #008080;
+          }
+        }
+      }
+    }
+
+    .tab-cont {
+      background-color: transparent;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+      // border: solid white;
+      .tab-pane {
+        padding: 20px 25px;
+      }
+    }
+  }
+
+  .allcard-section-wrapper-desktop {
+    .single-card {
+      margin-bottom: 12px;
+
+      .img {
+        img {
+          width: 100%;
+          height: 260px;
+        }
+      }
+      .card-bottom {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 12px;
+        height: 220px;
+        position: relative;
+        .title {
+          h1 {
+            @media only screen and (max-width: 644px) {
+              font-size: 24px;
+            }
+            color: rgba(0, 0, 0, 0.5);
+            font-family: "Play";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+          }
+        }
+        .ratings {
+          color: #ffc107;
+          padding: 5px 0px;
+        }
+        .details {
+          height: 70px;
+          overflow: hidden;
+          p {
+            color: #000;
+            font-family: "Rubik";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 5px 0px;
+            height: 100%;
+
+            @media only screen and (max-width: 644px) {
+              font-size: 15px;
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 1.3rem;
+          button {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            p {
+              color: #000;
+              font-family: "Rubik";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 21px */
+              text-transform: uppercase;
+              @media only screen and (max-width: 644px) {
+                font-size: 10px;
+              }
+            }
+            img {
+              width: 20px;
+              height: 20px;
+              @media only screen and (max-width: 644px) {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        .booknowbutton {
+          button {
+            @media only screen and (max-width: 644px) {
+              display: flex;
+              width: 102px;
+              height: 40px;
+              padding: 10px 22px;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              font-size: 11px;
+              padding: 0;
+            }
+            display: flex;
+            padding: 10px 22px;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            align-self: stretch;
+            border-radius: 5px;
+            background: #008080;
+            box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.49),
+              0px 4px 11px 0px rgba(0, 0, 0, 0.49) inset;
+            color: #fff;
+            font-family: "Poppins";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .allcard-section-wrapper-mobile {
+    display: none;
+  }
+}
+.tab-allcard-section-wrapper-mobile {
+  display: block;
+}
+@media only screen and (max-width: 644px) {
+}
+.tab-allcard-section-wrapper-mobile {
+  display: none;
+  gap: 10px;
+  // border: solid rgb(11, 11, 191);
+  width: 100%;
+
+  .tab-mobile-view-all-card-container-slider {
+    // border: solid rgb(238, 238, 238);
+    width: 100%;
+    .mobile-single-slider {
+      height: 100px;
+      width: 200px;
+      // border: solid rgb(102, 10, 167);
+    }
+    .single-card-mobile {
+      // width: 333px !important;
+      // border: solid white;
+      border-radius: 12px;
+      .img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .card-bottom {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        .title {
+          h1 {
+            font-size: 24px;
+
+            color: rgba(0, 0, 0, 0.5);
+            font-family: "Play";
+
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .ratings {
+          color: #ffc107;
+          padding: 10px 0px;
+        }
+        .details {
+          p {
+            color: #000;
+            font-family: "Rubik";
+
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 15px 0px;
+
+            font-size: 15px;
+          }
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            p {
+              color: #000;
+              font-family: "Rubik";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 21px */
+              text-transform: uppercase;
+              @media only screen and (max-width: 644px) {
+                font-size: 10px;
+              }
+            }
+            img {
+              width: 30px;
+              height: 30px;
+              @media only screen and (max-width: 644px) {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        .booknowbutton {
+          button {
+            @media only screen and (max-width: 644px) {
+              display: flex;
+              width: 102px;
+              height: 40px;
+              padding: 10px 20px;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              font-size: 13px;
+              padding: 0;
+            }
+            display: flex;
+            padding: 10px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            align-self: stretch;
+            border-radius: 12px;
+            background: #008080;
+            box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.49),
+              0px 4px 11px 0px rgba(0, 0, 0, 0.49) inset;
+            color: #fff;
+            font-family: "Poppins";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

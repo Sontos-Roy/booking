@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="./JS/Jquery.js"></script>
+  <script src="./JS/slick.min.js"></script>
+  <!-- ------------------------ SCSS FILES START --------------------------- -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ------------------------ SCSS FILES END --------------------------------->
+  <!-- ------------------------ FONT AWESOME FILES START --------------------------------->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- ------------------------ FONT AWESOME FILES START --------------------------------->
+  <!-- ------------------------ SLICK SLIDER FILES START --------------------------------->
+  <link rel="stylesheet" href="./SCSS/slick-theme.css" />
+  <link rel="stylesheet" href="./SCSS/slick.css" />
+
+  <!-- ------------------------ SLICK SLIDER FILES END --------------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="car-services-section-main-parent-container-wrapper">
+    <div class="car-services-banner"></div>
+    <div class="car-services-banner-mobile-wrapper">
+      <div class="car-services-banner-mobile">
+        <img
+          src="/ASSETS/images/car-services-banner/car-service-mobilebanner.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div class="navbar-main-parent-container-wrapper">
+          <div class="desktop-view-navbar">
+            <div class="nav-left-logo">
+              <img src="./ASSETS/images/logo.png" alt="" />
+            </div>
+            <div class="nav-middle-links">
+              <a href="">Home</a>
+              <div class="dropdown-wrapper">
+                <div class="dropdown">
+                  <button class="dropdown__button">Services</button>
+                  <div class="dropdown__items dropdown--hide">
+                    <button class="dropdown__item">Dropdown item 1</button>
+                    <button class="dropdown__item">Dropdown item 2</button>
+                    <button class="dropdown__item">Dropdown item 3</button>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-wrapper">
+                <div class="dropdown">
+                  <button class="dropdown__button">My Booking</button>
+                  <div class="dropdown__items dropdown--hide">
+                    <button class="dropdown__item">
+                      Dropdown item 1asdfads
+                    </button>
+                    <button class="dropdown__item">Dropdown item 2asdf</button>
+                    <button class="dropdown__item">Dropdown item 3asdf</button>
+                  </div>
+                </div>
+              </div>
+              <a href="">My Booking</a>
+              <a href="">Package & Offers</a>
+              <a href="">Blog</a>
+              <a href="">More</a>
+            </div>
+            <div class="nav-right-side">
+              <div class="search-bar">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <div class="search-bar-container active">
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+                    alt="magnifier"
+                    class="magnifier"
+                  />
+                  <input type="text" class="input" placeholder="Search ..." />
+                  <img
+                    src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+                    alt="mic-icon"
+                    class="mic-icon"
+                  />
+                </div>
+              </div>
+              <div class="language-select">
+                <i class="fa-solid fa-globe"></i>
+                <select name="" id="">
+                  <option value="">Eng</option>
+                  <option value="">Bang</option>
+                </select>
+              </div>
+              <div class="auth-buttons">
+                <button class="btn1">Login</button>
+                <button class="btn2">Register</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-view-navbar-wrapper">
+            <div class="mobile-view-navbar-inner-container">
+              <div class="left-logo">
+                <img src="./ASSETS/images/logo.png" alt="" />
+              </div>
+              <div class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- -------------------------- tab section start ------------------------- -->
+
+    <div class="all-category-tabsection-parent-wrapper">
+      <div class="tab-block" id="tab-block">
+        <ul class="tab-mnu">
+          <li class="active">Car</li>
+          <li>Flight</li>
+          <li>Hotel</li>
+          <li>Boat</li>
+        </ul>
+
+        <div class="tab-cont">
+          <div class="tab-pane">
+            <!-- ------------------------ form start --------------- -->
+            <div
+              class="landing-page-bannerform-main-parent-container-wrapper-for-carservices"
+            >
+              <div class="inner">
+                <div class="top">
+                  <div class="left"><p>CHOOSE CATEGORY</p></div>
+                  <!-- <div class="middle">
+                      <div class="linkactive">
+                        <a href="">Car</a>
+                      </div>
+                      <div class="link">
+                        <a href="">Flight</a>
+                      </div>
+                      <div class="link">
+                        <a href="">Hotel</a>
+                      </div>
+                      <div class="link">
+                        <a href="">Boat</a>
+                      </div>
+                    </div> -->
+                  <div class="right">
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">One Way</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">Round Trip</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section-wrapper">
+                  <form action="" class="car-landing-form">
+                    <div class="top-inputs">
+                      <div class="top-singleinput">
+                        <label for="">From</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">TO</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">CHOOSE YOUR CAR</label>
+                        <select name="" id="">
+                          <option value="">Chrysler 300 Limo</option>
+                          <option value="">Chrysler 300 Limo</option>
+                          <option value="">Chrysler 300 Limo</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="bottom-inputs">
+                      <div class="left-bottom">
+                        <div class="noof-Luggage">
+                          <label for="">No of Luggage</label>
+                          <div class="inner">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                          </div>
+                        </div>
+                        <div class="date-and-time">
+                          <label for="">Pick-up Date and Time</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <input type="time" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="date-and-time">
+                          <label for="">Drop-off Date and Time</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <input type="time" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="date-and-time">
+                          <label for="">Passengers</label>
+                          <div class="time-inputs">
+                            <select name="" id="">
+                              <option value="">1 adult</option>
+                              <option value="">2 adult</option>
+
+                              <option value="">3 adult</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons">
+                        <button>BOOK NOW</button>
+                        <button>SEARCH NOW</button>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" name="" id="" />
+                      <label for="">Return car to different location</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="car-services-all-card-section-wrapper">
+              <div class="card-inner">
+                <div class="service-head">
+                  <h1>OUR CAR <span>FLEETS</span></h1>
+                </div>
+                <div class="all-card-mother-container">
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <a href="/Driver-details.html"
+                          ><button class="driver-details">
+                            Driver Details
+                          </button></a
+                        >
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <!-- ------------------------ form start --------------- -->
+            <div
+              class="landing-page-bannerform-main-parent-container-wrapper-for-carservices"
+            >
+              <div class="inner">
+                <div class="top">
+                  <div class="left"><p>CHOOSE CATEGORY</p></div>
+                  <!-- <div class="middle">
+                        <div class="linkactive">
+                          <a href="">Car</a>
+                        </div>
+                        <div class="link">
+                          <a href="">Flight</a>
+                        </div>
+                        <div class="link">
+                          <a href="">Hotel</a>
+                        </div>
+                        <div class="link">
+                          <a href="">Boat</a>
+                        </div>
+                      </div> -->
+                  <div class="right">
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">One Way</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">Round Trip</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section-wrapper">
+                  <form action="" class="car-landing-form">
+                    <div class="top-inputs">
+                      <div class="top-singleinput">
+                        <label for="">From</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">TO</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">Class</label>
+                        <select name="" id="">
+                          <option value="">Economy</option>
+                          <option value="">Business</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="bottom-inputs">
+                      <div class="left-bottom">
+                        <!-- <div class="noof-Luggage">
+                            <label for="">No of Luggage</label>
+                            <div class="inner">
+                              <button>-</button>
+                              <p>1</p>
+                              <button>+</button>
+                            </div>
+                          </div> -->
+                        <div class="date-and-time">
+                          <label for="">Depart Date</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <!-- <input type="time" name="" id="" /> -->
+                          </div>
+                        </div>
+                        <!-- <div class="date-and-time">
+                            <label for="">Drop-off Date and Time</label>
+                            <div class="time-inputs">
+                              <input type="date" name="" id="" />
+                              <input type="time" name="" id="" />
+                            </div>
+                          </div> -->
+                        <div class="date-and-time">
+                          <label for="">Passengers</label>
+                          <div class="time-inputs">
+                            <select name="" id="">
+                              <option value="">1 adult</option>
+                              <option value="">2 adult</option>
+
+                              <option value="">3 adult</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons-flight">
+                        <!-- <button>BOOK NOW</button> -->
+                        <a href=""> <button>SEARCH NOW</button></a>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" name="" id="" />
+                      <label for="">Return car to different location</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="car-services-all-card-section-wrapper">
+              <div class="card-inner">
+                <div class="service-head">
+                  <h1>OUR CAR <span>FLEETS</span></h1>
+                </div>
+                <div class="all-card-mother-container">
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                  <div class="single-car-service-card">
+                    <div class="img">
+                      <img
+                        src="./ASSETS/images/car-service-card/carservice-img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="title"><h1>LINCOLN CLASSIC SEDAN</h1></div>
+                    <div class="details">
+                      <div class="top-details-with-button">
+                        <div class="single-details-list bb">
+                          <img
+                            src="./ASSETS/images/car-service-card/tick.png"
+                            alt=""
+                          />
+                          <p>10 Passenger</p>
+                        </div>
+                        <button class="driver-details">Driver Details</button>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Satin + leather interior</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Drinks included</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Air Conditioned and heated Seats</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>WiFi Connection</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Blutooth audio system</p>
+                      </div>
+                      <div class="single-details-list mt">
+                        <img
+                          src="./ASSETS/images/car-service-card/tick.png"
+                          alt=""
+                        />
+                        <p>Mobile phone Charger</p>
+                      </div>
+                    </div>
+                    <div class="bottom-buttons">
+                      <div class="btn1">$49/ <span>hour</span></div>
+                      <div class="btn2">BOOK NOW</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <!-- ------------------------ form start --------------- -->
+            <div
+              class="landing-page-bannerform-main-parent-container-wrapper-for-carservices"
+            >
+              <div class="inner">
+                <div class="top">
+                  <div class="left"><p>CHOOSE CATEGORY</p></div>
+                  <!-- <div class="middle">
+                      <div class="linkactive">
+                        <a href="">Car</a>
+                      </div>
+                      <div class="link">
+                        <a href="">Flight</a>
+                      </div>
+                      <div class="link">
+                        <a href="">Hotel</a>
+                      </div>
+                      <div class="link">
+                        <a href="">Boat</a>
+                      </div>
+                    </div> -->
+                  <div class="right">
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">One Way</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">Round Trip</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section-wrapper">
+                  <form action="" class="car-landing-form">
+                    <div class="top-inputs">
+                      <div class="top-singleinput">
+                        <label for="">From</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">TO</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">CHOOSE YOUR CAR</label>
+                        <select name="" id="">
+                          <option value="">Chrysler 300 Limo</option>
+                          <option value="">Chrysler 300 Limo</option>
+                          <option value="">Chrysler 300 Limo</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="bottom-inputs">
+                      <div class="left-bottom">
+                        <div class="noof-Luggage">
+                          <label for="">No of Luggage</label>
+                          <div class="inner">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                          </div>
+                        </div>
+                        <div class="date-and-time">
+                          <label for="">Pick-up Date and Time</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <input type="time" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="date-and-time">
+                          <label for="">Drop-off Date and Time</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <input type="time" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="date-and-time">
+                          <label for="">Passengers</label>
+                          <div class="time-inputs">
+                            <select name="" id="">
+                              <option value="">1 adult</option>
+                              <option value="">2 adult</option>
+
+                              <option value="">3 adult</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons">
+                        <button>BOOK NOW</button>
+                        <button>SEARCH NOW</button>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" name="" id="" />
+                      <label for="">Return car to different location</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="car-services-all-card-section-wrapper"></div>
+          </div>
+          <div class="tab-pane">
+            <!-- ------------------------ form start --------------- -->
+            <div
+              class="landing-page-bannerform-main-parent-container-wrapper-for-carservices"
+            >
+              <div class="inner">
+                <div class="top">
+                  <div class="left"><p>CHOOSE CATEGORY</p></div>
+                  <!-- <div class="middle">
+                        <div class="linkactive">
+                          <a href="">Car</a>
+                        </div>
+                        <div class="link">
+                          <a href="">Flight</a>
+                        </div>
+                        <div class="link">
+                          <a href="">Hotel</a>
+                        </div>
+                        <div class="link">
+                          <a href="">Boat</a>
+                        </div>
+                      </div> -->
+                  <div class="right">
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">One Way</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="" id="" />
+                      <label for="">Round Trip</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section-wrapper">
+                  <form action="" class="car-landing-form">
+                    <div class="top-inputs">
+                      <div class="top-singleinput">
+                        <label for="">From</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">TO</label>
+                        <input type="text" />
+                      </div>
+                      <div class="top-singleinput">
+                        <label for="">Class</label>
+                        <select name="" id="">
+                          <option value="">Economy</option>
+                          <option value="">Business</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="bottom-inputs">
+                      <div class="left-bottom">
+                        <!-- <div class="noof-Luggage">
+                            <label for="">No of Luggage</label>
+                            <div class="inner">
+                              <button>-</button>
+                              <p>1</p>
+                              <button>+</button>
+                            </div>
+                          </div> -->
+                        <div class="date-and-time">
+                          <label for="">Depart Date</label>
+                          <div class="time-inputs">
+                            <input type="date" name="" id="" />
+                            <!-- <input type="time" name="" id="" /> -->
+                          </div>
+                        </div>
+                        <!-- <div class="date-and-time">
+                            <label for="">Drop-off Date and Time</label>
+                            <div class="time-inputs">
+                              <input type="date" name="" id="" />
+                              <input type="time" name="" id="" />
+                            </div>
+                          </div> -->
+                        <div class="date-and-time">
+                          <label for="">Passengers</label>
+                          <div class="time-inputs">
+                            <select name="" id="">
+                              <option value="">1 adult</option>
+                              <option value="">2 adult</option>
+
+                              <option value="">3 adult</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons-flight">
+                        <!-- <button>BOOK NOW</button> -->
+                        <a href=""> <button>SEARCH NOW</button></a>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" name="" id="" />
+                      <label for="">Return car to different location</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="car-services-all-card-section-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------- ALL SCRIPT FILE START ---------------------------- -->
+    <script src="./JS/dropdown.js"></script>
+    <script src="./JS/searchbar.js"></script>
+    <script src="./JS/landingTab.js"></script>
+
+    <!-- ----------------------------------------- ALL SCRIPT FILE END ---------------------------- -->
+    <script>
+      $(document).ready(function () {
+        $("").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true,
+          autoplay: false,
+          loop: true,
+          centerMode: false,
+
+          // centerPadding: "20",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+              },
+            },
+          ],
+
+          nextArrow:
+            '<a class="next_arrow"> <i class="fa-solid fa-angle-right"></i></a>',
+          prevArrow:
+            '<a class="prev_arrow"> <i class="fa-solid fa-angle-left"></i></a>',
+        });
+      });
+    </script>
+    <!-- ----------------------------------------- SLIDER START ---------------------------- -->
+  </body>
+</html>
